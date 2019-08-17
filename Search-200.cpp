@@ -24,7 +24,7 @@ public:
 		for (int i = 0; i<grid.size(); i++){
 			for (int j = 0; j< grid[0].size(); j++){
 				if (grid[i][j] == '1' && mark[i][j] == 0){
-					DFS(mark, grid, i, j); //or BFS
+					BFS(mark, grid, i, j); //or BFS
 					island_num++;
 				}
 			}
@@ -65,7 +65,7 @@ public:
 				int newx = dx[i] + x;
 				int newy = dy[i] + y;
 
-				if (newx < 0 || newx > mark.size() || newy < 0 || newy > mark.size())
+				if (newx < 0 || newx >= mark.size() || newy < 0 || newy >= mark[newx].size())
 					continue;
 				if (mark[newx][newy] == 0 && grid[newx][newy] == '1') {
 					Q.push(make_pair(newx, newy));
