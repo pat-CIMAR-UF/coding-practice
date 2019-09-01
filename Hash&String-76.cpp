@@ -46,7 +46,7 @@ public:
                 }
                 else if (map_s[begin_ch] > map_t[begin_ch]){
                     map_s[begin_ch]--;
-                    window_begin++
+                    window_begin++;
                 }
                 else{
                     break;
