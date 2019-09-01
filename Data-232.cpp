@@ -12,6 +12,7 @@
 #include <string>
 #include<algorithm>
 #include <math.h>
+#include <stack> 
 
 using namespace std;
 
