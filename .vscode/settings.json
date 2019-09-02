@@ -5,6 +5,7 @@
         "iostream": "cpp",
         "map": "cpp",
         "queue": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "deque": "cpp"
     }
 }
